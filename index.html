@@ -7,13 +7,15 @@
 	<meta name="description" content="This site is about Ryan Chen's portfolio"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="http://pixelhint.com/demo/crafty/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 	<script src="js/main.js"></script>
 </head>
 
 <body>
-	<header name="top">
+	<header class="top_nav" name="top">
 		<div class="wrapper">
 			<a href="#"><img src="images/logo1.png" alt="RyanChenWeb Logo" class="logo"></a>
 			<a href="#" class="menu_icon" id="menu_icon"></a>
@@ -41,16 +43,32 @@
 			<h2>About</h2>
 			<div class="content">
 				<div class="me">
-					<h3>My Intro</h3>
-					<p>My name is Ryan Chen, and I welcome you to my site. I have more than 10 years of professional experience in web applications development. Building a scalable and responsive websites has always been my passion. I started my first web page when I was in high school, and it has been an amazing journey to see how the web has evolved till today.</p>
+					<h3 class="about-intro">My Intro</h3>
+					<button type="button" id="btnChinese" class="btn info btn-warning btn-xs">Chinese</button>
+					<button type="button" id="btnEnglish" class="btn info btn-warning btn-xs">English</button>
+					<div id="introCh">
+						<p>你好，我是陳俊綱 (Ryan Chen)，歡迎來到我的個人網頁及作品集。我擁有十年專業的網頁及應用開發經驗，建置一個可擴展性與響應式的網頁一直以來都是我的興趣。我在高中時期建置了我的第一個網頁後，到如今親身經歷了網路的進化與進程，可以說是一段非常奇妙的旅程。</p>
 
-					<p>I worked for Verizon as a Senior Software Engineer in the past 2.5 years. I was in the Verizon Lab under Internet Services Team, where we build <a href="#verizon">innovate products</a> to support company's various needs. I had an opportunity to learn and apply some of the latest technologies like AngularJS and ReactJS on the projects. It was such a rewarding experience to know that the products I worked on will be viewed and used by millions of Verizon's customers in US.
+						<p>在過去兩年半裡我在<a href="https://www.verizonwireless.com/" target="_blank">Verizon</a>服務擔任資深軟體工程師。Verizon是全美國最大的電信服務供應商。我在公司裡的網路服務小組，也號稱是Verizon實驗室裡面，根據公司推展的方向以及商業目標負責<a href="#verizon">創新產品</a>的開發。這段時間裡我有機會學習與應用到最新的前端技術如AngularJS與React。能夠參與並且知道到自己所負責的項目將會被上百萬的美國電信用戶看到與使用，真的是一種很棒的經驗。</p>
 
-					<p>I joined Google's Brand Studio team in mid 2013 as a contract Web Developer. During the one year period I have worked with many talented developers and product managers in the team. I was assigned to the Google Social/Geo and .org group, and focused on creating and maintaining Google's various <a href="#google">marketing sites</a>.</p>
+						<p>在Verizon之前我在<a href="http://www.google.com" target="_blank">Google</a>當約聘的網路開發工程師。我在Brand Studio組裡面，我們小組主要是負責支援Google旗下擁有的眾多<a href="#google">行銷網站</a>，如Google Maps以及Google Chromes。在這短短一年的時間裡我有榮幸跟很多優秀的工程師與產品經理們合作。像我這樣以軟體工程師為職業的人，能夠在Google總部裡工作對我來說就像是美夢成真一樣。</p>
 
-					<p>Prior to Google I worked for E*TRADE Financial as a Software Engineer. I was in a mobile app team and we built a <a href="#etrade">web based applications</a> for tablets. My job was to write a clean and semantic front-end code across many different tablets devices. The app was released in March 2013, and was available to download on iTunes and Google Play at that time.</p>
+						<p>在進Google工作之前我在<a href="https://us.etrade.com/" target="_blank">E*TRADE</a>裡擔任軟體工程師。E*TRADE是一家總部設在紐約提供金融服務的公司，它提供給客戶進行網路上的股票基金買賣交易。我在行動應用小組裡負責開發以網路為基礎的平板<a href="#etrade">應用程式</a>，我的工作是負責建造整潔，響應式與跨平台的應用程式給不同的行動裝置。我們從0開始的應用程式經歷了一整年的開發後在2013年按照計劃上線，並且當時在iTunes與Google Play都可以下載得到。</p>
 
-					<p>When not coding I enjoy playing tennis, listening music and watching movies. I don't travel a lot, but I have been to Japan twice and I really like its culture. I learned Japanese by myself and passed a JLPT level 3 in year 2010, but my Japanese skills didn't really go anywhere since then :P As far as the tennis goes I am a big fan of Roger Federer (hint: the greatest tennis player at all time). With his age I still believe he can win another Grand Slam title (which he did in 2017 Australian Open!). In case you are wondering, the adorable dog on top of this page is my dog, Mochi. He was a smart little thing that always brighten up my day, before he left us years ago. Really miss him!</p>
+						<p>當我沒有在寫程式的時候，我很享受打網球，聽音樂與看電影。我沒有很常旅遊，但我去了日本兩次並且深深的喜歡上他們的文化。我自己花了一年多的時間自學了日文，並且在2010年考到了N4的日文檢定考試。但是從那之後好像日文就沒有再進步了:P。有關網球方面我是費德勒的超級粉絲(提示: 是個非常偉大的網球球員)。即使以他現在的年紀我還是相信他能再拿到一個大滿貫賽冠軍(他在2017年的澳網真的辦到了!)。最後 如果你好奇網頁上方那隻狗狗的照片的話，他的名字是麻吉。他是一隻聰明，善解人意，有時也不太友善但卻能照亮我每一天的小東西。他在幾年前離開我了，非常想念你，麻吉!<p>
+					</div>
+
+					<div id="introEn">
+						<p>My name is Ryan Chen (陳俊綱), and I welcome you to my site. I have more than 10 years of professional experience in web applications development. Building scalable and responsive websites or applications has always been my passion. I started my first web page when I was in high school, and it has been an amazing journey to see how the web has evolved and progressed since then.</p>
+
+						<p>I worked for <a href="https://www.verizonwireless.com/" target="_blank">Verizon</a> as a Sr. Software Engineer in the past 2.5 years. Verizon is the largest U.S. wireless communications service provider. I was in the Verizon Lab under Internet Services Team, where we build <a href="#verizon">innovate products</a> to meet company's directions and business goals. I had an opportunity to learn and apply some of the latest technologies like AngularJS and React frameworks on the projects. It was such a rewarding experience to know that the products I worked on will be viewed and used by millions of Verizon's customers in U.S.</p>
+
+						<p>Before Verizon I was working with <a href="http://www.google.com" target="_blank">Google</a> as a contract Web Developer. I was in the Brand Studio team, our team supported many of the Google's <a href="#google">marketing sites</a> like Google Maps and Google Chromes. During a one year period I have worked with so many talented Engineers and Product Managers. As a Software Enginner like me, it is really a dream come true to work for a company like Google.</p>
+
+						<p>Prior to Google I worked for <a href="https://us.etrade.com/" target="_blank">E*TRADE Financial</a> as a Software Engineer. E*TRADE is a financial services company headquartered in New York. It provides the services for the customers to sell and buy their securities online. I was in the Mobile App team and we built a <a href="#etrade">web based applications</a> for tablets. My job was to build a clean and responsive cross-platforms application for many different devices. After a year created from scratch, the app was completed and released in March 2013, and was available to download on iTunes and Google Play at that time.</p>
+
+						<p>When not coding I enjoy playing tennis, listening music and watching movies. I don't travel a lot, but I have been to Japan twice and I really like its culture. I learned Japanese by myself and passed a JLPT N4 in year 2010, but my Japanese skills didn't really go anywhere since then :p. As far as the tennis goes I am a big fan of Roger Federer (hint: the greatest tennis player). Even with his current age I still believe he can win another Grand Slam title (which he did in 2017 Australian Open!). Finanlly, in case you are wondering about the adorable dog on top of this page, his name is Mochi. He was a smart, thoughtful and not-always-friendly little thing who always brighten up my day, before he left me years ago. Really miss you, Mochi!</p>
+					</div>
 				</div>
 
 				<div class="qual">
@@ -59,10 +77,10 @@
 						<li><a href="http://www.w3schools.com/html/" target="_blank">HTML</a></li>
 						<li><a href="http://www.w3schools.com/css/" target="_blank">CSS</a></li>
 						<li><a href="http://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
+						<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
 						<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
 						<li><a href="https://angularjs.org/" target="_blank">AngularJS</a></li>
-						<li><a href="https://facebook.github.io/react/" target="_blank">ReactJS</a></li>
-						<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+						<li><a href="https://facebook.github.io/react/" target="_blank">React</a></li>
 						<li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
 						<li><a href="http://nodejs.org/" target="_blank">Node.js</a></li>
 						<li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>
@@ -71,6 +89,8 @@
 						<li><a href="http://php.net/" target="_blank">PHP</a></li>
 						<li><a href="http://docs.oracle.com/javase/tutorial/" target="_blank">Java</a></li>
 						<li><a href="http://www.mysql.com/" target="_blank">MySQL</a></li>
+						<li><a href="https://www.getpostman.com/" target="_blank">Postman</a></li>
+						<li><a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">Responsive Web Design</a></li>
 					</ul>
 				</div>
 			</div>
@@ -94,8 +114,9 @@
 					</div>
 					<ul>
 						<li>Transform the mock-up to a functional web applications.</li>
-						<li>Single page applications using JavaScript frameworks.</li>
+						<li>Single page applications using AngularJS framework.</li>
 						<li>Responsive sites across different devices.</li>
+						<li><a href="https://www.internetservices.verizon.com/" target="_blank">Visit site</a></li>
 					</ul>
 					<ul class="tech">
 						<li>HTML</li>
@@ -109,7 +130,7 @@
 
 			<div class="list">
 				<div class="thumbnail">
-					<img src="images/portfolio/verizon.png" alt="Verizon">
+					<img src="images/portfolio/image-annotation.png" alt="Verizon">
 				</div>
 				<div class="details">
 					<div class="header">
@@ -118,14 +139,16 @@
 					</div>
 					<ul>
 						<li>Internal tool to support localization of the mock-ups.</li>
-						<li>Use ReactJS framework to accomplish the job.</li>
-						<li>Was praised by many Product Managers about the outcome.</li>
+						<li>Users can upload an screenshot, add annotation to it and generate the JSON file.</li>
+						<li>Use React framework to complete the application.</li>
+						<li>Was praised by the Product Manager for the result.</li>
+						<li><a href="http://www.ryanchenweb.com/tools/" target="_blank">Visit site</a></li>
 					</ul>
 					<ul class="tech">
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
-						<li>React JS</li>
+						<li>React</li>
 					</ul>
 				</div>
 			</div>			
@@ -393,6 +416,7 @@
 					<ul>
 						<li>A little movies site to play around with the new technologies.</li>
 						<li>Use Node.js to serve the backend, and MongoDB for the database.</li>
+						<li>Deploy the application using Heroku.</li>
 						<li><a href="https://limitless-gorge-18480.herokuapp.com/movies" target="_blank">Visit site</a></li>
 					</ul>
 					<ul class="tech">
@@ -400,6 +424,8 @@
 						<li>CSS</li>
 						<li>Node.js</li>
 						<li>MongoDB</li>
+						<li>Express</li>
+						<li>Heroku</li>
 					</ul>
 				</div>
 			</div>
@@ -416,7 +442,7 @@
 			<p>I can't begin to tell you how awesome he has been in helping me with any number of updates associated with Google.org Marketing.  He has gone above and beyond the call of duty - at all hours of the night to answer my endless questions, troubleshoot unexpected challenges, and ensure our websites are running smoothly and effectively.</p>
 
 			<p>Ryan represents the best of Google and we're lucky to have him on the team."</p>
-			<p class="author"><em>Lauren Baum - Product Marketing Manager of Google.org, 2014</em></p>
+			<p class="author"><em>Lauren Baum - Product Marketing Manager at Google, 2014</em></p>
 		</div>
 		<a href="#contact" class="section_arrow down white"></a>
 	</section><!--  End Testimonials  -->
@@ -424,9 +450,10 @@
 	<footer name="contact">
 		<h2>Contact</h2>
 		<p>E-mail: <a href="mailto:ryan26tw@yahoo.com">ryan26tw@yahoo.com</a></p>
+		<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ryan-chen-web"><a class="LI-simple-link" href='https://www.linkedin.com/in/ryan-chen-web?trk=profile-badge'>Ryan Chen</a></div>
 		<a href="#top" class="section_arrow up"></a>
 		<img src="images/logo2.png" alt="RyanChenWeb Logo" class="logo">
-		<p class="rights">RyanChenWeb.com</p>
+		<p class="rights">ryanchenweb.com</p>
 		<p id="full_year"></p>
 	</footer><!--  End Footer  -->
 
