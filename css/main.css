@@ -18,7 +18,7 @@ h2 {
   color: #4e4e4e;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
 }
 h3 {
@@ -171,7 +171,7 @@ h3 {
 }
 .about-intro {
 	float: left;
-	width: 85px;
+	width: 150px;
 }
 #btnChinese, #btnEnglish {
 	float: left;
@@ -351,9 +351,6 @@ h3 {
 .testimonials p:first-child {
 	margin-top: 13px;
 }
-.testimonials h2 {
-	color: #ffcc66;
-}
 .testimonials p.notes,
 .testimonials p.author {
   color: #ffcc66;
@@ -368,7 +365,7 @@ h3 {
 
 /*  Footer  */
 footer {
-  padding: 30px 0 40px 0;
+  padding: 30px 0 5px 0;
   background: #fff;
   text-align: center;
 }
@@ -383,6 +380,12 @@ footer .rights {
   margin-top: -15px;
   line-height: 25px;
 }
+.resume {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
 .LI-profile-badge,
 .LI-footer {
 	text-align: left;
@@ -390,7 +393,7 @@ footer .rights {
 .LI-profile-badge {
 	width: 280px;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 /*  Responsive code  */
