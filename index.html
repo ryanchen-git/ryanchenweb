@@ -1,235 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Ryan Chen Web</title>
-  <meta charset="utf-8">
-  <meta name="author" content="RyanChenWeb.com">
-  <meta name="description" content="This site is about Ryan Chen's portfolio"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
+  <head>
+    <title>Ryan Chen Web</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="RyanChenWeb.com" />
+    <meta
+      name="description"
+      content="This site is about Ryan Chen's portfolio"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
 
-<body>
-  <header class="top_nav" name="top">
-    <div class="wrapper">
-      <a href="#"><img src="images/logo1.png" alt="RyanChenWeb Logo" class="logo"></a>
-      <a href="#" class="menu_icon" id="menu_icon"></a>
-      <nav id="nav_menu">
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="file/RyanChenResume.pdf" tabindex="-1" target="_blank">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header><!--  End Header  -->
-
-  <section class="intro">
-    <div class="wrapper">
-      <div class="caption">
-        <p>Hello, I'm Ryan Chen<span>_</span></p>
-      </div>
-    </div>
-  </section><!--  End intro  -->
-
-  <section class="about" name="about">
-    <div class="wrapper">
-      <h2>About Me</h2>
-      <div class="content">
-        <div class="me">
-          <h3 class="about-intro">My Introduction</h3>
-          <button type="button" id="btnChinese" class="btn info btn-warning btn-xs">中文</button>
-          <button type="button" id="btnEnglish" class="btn info btn-warning btn-xs">English</button>
-          <div id="introCh">
-            <p>我是陳俊綱 (Ryan Chen)，歡迎來到我的個人網頁及作品集。我擁有十五年以上專業的網頁及應用開發經驗，開發一個可擴展性與RWD的網頁一直以來都是我的興趣。我在高中時期製作了我的第一個網頁後，到如今體驗了網路的進化與進程，可以說是一段非常奇妙的旅程。</p>
-
-            <p>我目前在<a href="https://www.gorilla-technology.com/" target="_blank">Gorilla Technology Group</a>的Security Covergence團隊裡面擔任軟體工程師。 我主要是負責公司裡的各項產品以及專案的前端開發。我們團隊負責開發線上的應用程式進行網路封包的監控管理以及網路惡意程式的行為追蹤。我們主要瞄準的客戶群是小型的企業公司以及政府單位。</p>
-
-            <p>在之前的兩年半裡我在<a href="https://www.verizonwireless.com/" target="_blank">Verizon</a>服務並擔任資深軟體工程師。Verizon是全美國最大的電信服務供應商。我在公司裡的網路服務團隊裡，也號稱是Verizon實驗室組裡面，根據公司推展的方向以及商業目標負責<a href="#verizon">創新產品</a>的開發。這段時間裡我有機會學習與應用到最新的前端技術如AngularJS與React。能夠參與並且明白到自己所負責的項目將會被上百萬的用戶看到與使用，真的是一種很棒的經驗。</p>
-
-            <p>在Verizon之前我在<a href="http://www.google.com" target="_blank">Google</a>當約聘的網路開發工程師。我在Brand Studio團隊裡面，我們小組主要是負責支援開發與維護Google旗下擁有的眾多<a href="#google">行銷網站</a>，如Google Maps, Gmail以及Google Chromes。在這短短一年的時間裡我有榮幸跟很多優秀的工程師與產品經理們合作。像我這樣以軟體工程師為職業的人，能夠在Google總部裡工作對我來說就像是美夢成真一樣。</p>
-
-            <p>在進Google工作之前我在<a href="https://us.etrade.com/" target="_blank">E*TRADE</a>裡擔任軟體工程師。E*TRADE是一家總部設在紐約並提供金融方面服務的公司，它主要給客戶進行網路上的股票基金買賣交易。我在行動應用團隊裡負責開發以網路為基礎的平板電腦<a href="#etrade">應用程式</a>，我的工作是負責建造開發整潔，響應式與跨平台的應用程式給不同的行動裝置。我們從零開始的應用程式經歷了一整年的開發後在2013年按照計劃上線，並且在當時的iTunes (App Stroe)與Google Play都可以下載得到。</p>
-
-            <p>當我沒有在忙著寫程式的時候，我很享受打網球，聽音樂與看電影。我沒有很常旅遊，但我去過了日本兩次並且深深的喜歡上日本的文化。我自己花了一年多的時間自學了日文，並且在2010年如願考到了N4的日文檢定考試。但是從那之後好像日文就沒有再進步了:P。至於說到網球方面，我是費德勒的超級粉絲。即使以他現在的年紀，他還是能夠打出不少非常有強度的比賽!哦，如果你好奇網頁上方那隻狗狗是誰的話，他的名字是麻吉。他是一隻聰明，善解人意，對陌生人不太友善但卻能照亮我每一天的小東西。非常地想念你, 麻吉!<p>
-          </div>
-
-          <div id="introEn">
-            <p>My name is Ryan Chen (陳俊綱), and I welcome you to my site. I have more than 15 years of professional experience in web applications development. Building scalable and responsive web has always been my passion. I started my first web site when I was in high school, and it has been an amazing journey to see how the web has evolved and progressed through out the past decades.</p>
-
-            <p>I am currently working at <a href="https://www.gorilla-technology.com/" target="_blank">Gorilla Technology Group</a> as a Software Engineer in the Security Convergence team. I am responsible for developing and maintaining the company's various products and projects. Our team is focusing on developing an online applications that tracks internet packets and detect malware and suspicious behaviors. Our clients are the small/medium business and government organizations.</p>
-
-            <p>I worked for <a href="https://www.verizonwireless.com/" target="_blank">Verizon</a> as a Sr. Software Engineer for 2.5 years while I was in the United States. Verizon is the largest U.S. wireless communications service provider. I was in the Verizon Lab under Internet Services Team, where we built <a href="#verizon">innovate products</a> to meet the company's directions and business goals. I had an opportunity to learn and apply some of the latest technologies like AngularJS and React on the projects. It was such a rewarding experience to know that the products I worked on have been viewed and used by millions of Verizon's customers in U.S.</p>
-
-            <p>Before Verizon I was working for <a href="http://www.google.com" target="_blank">Google</a> as a contract Web Developer. I was in the Brand Studio team, and our team supported many of the Google's <a href="#google">marketing sites</a> including Google Maps and Google Chromes. During that year I have worked with many talented Engineers and Product Managers. It is really a dream come true for me to work for a company like Google.</p>
-
-            <p>Prior to Google I worked for <a href="https://us.etrade.com/" target="_blank">E*TRADE Financial</a> as a Software Engineer. E*TRADE is a financial services company headquartered in New York, and it provides the services for the customers to trade their securities online. I was in the Mobile App team and we built a <a href="#etrade">web based applications</a> for mobile devices. My job was to build responsive cross-platforms applications for different devices like iPhone and iPad. When I joined the team we built the app from scratch, and it was completed and released in March 2013. The app was available to download on App Store and Google Play Store.</p>
-
-            <p>When not coding I enjoy playing tennis, listening music and watching movies. I don't travel a lot, but I have been to Japan several times and I really like its culture. I self-learned Japanese and passed a JLPT N4 exam in 2010, but my Japanese didn't really improve from that point :p. As far as the tennis goes, I am a big fan of Roger Federer. Despite his current age, he is still able to play many compitive games. Oh, in case you are wondering about the adorable dog on top of this page, his name is Mochi. He was a smart, thoughtful and not-always-friendly little thing who always brighten up my day. Really miss you, Mochi!</p>
-          </div>
-        </div>
-
-        <div class="qual">
-          <h3>My Qualification Skills</h3>
+  <body>
+    <header class="top_nav" name="top">
+      <div class="wrapper">
+        <a href="#"
+          ><img src="images/logo1.png" alt="RyanChenWeb Logo" class="logo"
+        /></a>
+        <a href="#" class="menu_icon" id="menu_icon"></a>
+        <nav id="nav_menu">
           <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
-            <li><a href="https://facebook.github.io/react/" target="_blank">React</a></li>
-            <li><a href="https://material-ui.com/" target="_blank">Material-UI</a></li>
-            <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
-            <li><a href="https://angularjs.org/" target="_blank">AngularJS</a></li>
-            <li><a href="https://facebook.github.io/react-native/" target="_blank">React Native</a></li>
-            <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
-            <!--<li><a href="http://lesscss.org/" target="_blank">Less</a></li>
-            <li><a href="https://jestjs.io/" target="_blank">Jest</a></li>-->
-            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-            <li><a href="http://git-scm.com/" target="_blank">Git</a></li>
-            <!--<li><a href="http://gulpjs.com/" target="_blank">Gulp</a></li>-->
-            <li><a href="https://webpack.js.org/" target="_blank">webpack</a></li>
-            <!--<li><a href="https://babeljs.io/" target="_blank">Babel</a></li>
-            <li><a href="http://php.net/" target="_blank">PHP</a></li>
-            <li><a href="http://docs.oracle.com/javase/tutorial/" target="_blank">Java</a></li>
-            <li><a href="http://www.mysql.com/" target="_blank">MySQL</a></li>
-            <li><a href="https://www.getpostman.com/" target="_blank">Postman</a></li>-->
-            <li><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/" target="_blank">RWD</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li>
+              <a href="file/RyanChenResume.pdf" tabindex="-1" target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
+        </nav>
+      </div>
+    </header>
+    <!--  End Header  -->
+
+    <section class="intro">
+      <div class="wrapper">
+        <div class="caption">
+          <p>Hello, I'm Ryan Chen<span>_</span></p>
         </div>
       </div>
-      <a href="#portfolio" class="section_arrow down grey"></a>
-    </div>
-  </section><!--  End About Me  -->
+    </section>
+    <!--  End intro  -->
 
-  <section class="portfolio" name="portfolio">
-    <div class="wrapper">
-      <h2>Portfolio</h2>
+    <section class="about" name="about">
+      <div class="wrapper">
+        <h2>About Me</h2>
+        <div class="content">
+          <div class="me">
+            <h3 class="about-intro">My Introduction</h3>
+            <button
+              type="button"
+              id="btnChinese"
+              class="btn info btn-warning btn-xs"
+            >
+              中文
+            </button>
+            <button
+              type="button"
+              id="btnEnglish"
+              class="btn info btn-warning btn-xs"
+            >
+              English
+            </button>
+            <div id="introCh">
+              <p>
+                我是陳俊綱 (Ryan
+                Chen)，歡迎來到我的個人網頁及作品集。我擁有十五年以上專業的網頁及應用開發經驗，開發一個可擴展性與RWD的網頁一直以來都是我的興趣。我在高中時期製作了我的第一個網頁後，到如今體驗了網路的進化與進程，可以說是一段非常奇妙的旅程。
+              </p>
 
-      <h3 class="company" name="verizon">Verizon <span>(2014 - 2017)</span></h3>
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/verizon.png" alt="verizon">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>Verizon Internet Services Portal</h3>
-            <div class="arrow"></div>
+              <p>
+                我目前在<a
+                  href="https://www.gorilla-technology.com/"
+                  target="_blank"
+                  >Gorilla Technology Group</a
+                >的Security Covergence團隊裡面擔任軟體工程師。
+                我主要是負責公司裡的各項產品以及專案的前端開發。我們團隊負責開發線上的應用程式進行網路封包的監控管理以及網路惡意程式的行為追蹤。我們主要瞄準的客戶群是小型的企業公司以及政府單位。
+              </p>
+
+              <p>
+                在之前的兩年半裡我在<a
+                  href="https://www.verizonwireless.com/"
+                  target="_blank"
+                  >Verizon</a
+                >服務並擔任資深軟體工程師。Verizon是全美國最大的電信服務供應商。我在公司裡的網路服務團隊裡，也號稱是Verizon實驗室組裡面，根據公司推展的方向以及商業目標負責<a
+                  href="#verizon"
+                  >創新產品</a
+                >的開發。這段時間裡我有機會學習與應用到最新的前端技術如AngularJS與React。能夠參與並且明白到自己所負責的項目將會被上百萬的用戶看到與使用，真的是一種很棒的經驗。
+              </p>
+
+              <p>
+                在Verizon之前我在<a href="http://www.google.com" target="_blank"
+                  >Google</a
+                >當約聘的網路開發工程師。我在Brand
+                Studio團隊裡面，我們小組主要是負責支援開發與維護Google旗下擁有的眾多<a
+                  href="#google"
+                  >行銷網站</a
+                >，如Google Maps, Gmail以及Google
+                Chromes。在這短短一年的時間裡我有榮幸跟很多優秀的工程師與產品經理們合作。像我這樣以軟體工程師為職業的人，能夠在Google總部裡工作對我來說就像是美夢成真一樣。
+              </p>
+
+              <p>
+                在進Google工作之前我在<a
+                  href="https://us.etrade.com/"
+                  target="_blank"
+                  >E*TRADE</a
+                >裡擔任軟體工程師。E*TRADE是一家總部設在紐約並提供金融方面服務的公司，它主要給客戶進行網路上的股票基金買賣交易。我在行動應用團隊裡負責開發以網路為基礎的平板電腦<a
+                  href="#etrade"
+                  >應用程式</a
+                >，我的工作是負責建造開發整潔，響應式與跨平台的應用程式給不同的行動裝置。我們從零開始的應用程式經歷了一整年的開發後在2013年按照計劃上線，並且在當時的iTunes
+                (App Stroe)與Google Play都可以下載得到。
+              </p>
+
+              <p>
+                當我沒有在忙著寫程式的時候，我很享受打網球，聽音樂與看電影。我沒有很常旅遊，但我去過了日本兩次並且深深的喜歡上日本的文化。我自己花了一年多的時間自學了日文，並且在2010年如願考到了N4的日文檢定考試。但是從那之後好像日文就沒有再進步了:P。至於說到網球方面，我是費德勒的超級粉絲。即使以他現在的年紀，他還是能夠打出不少非常有強度的比賽!哦，如果你好奇網頁上方那隻狗狗是誰的話，他的名字是麻吉。他是一隻聰明，善解人意，對陌生人不太友善但卻能照亮我每一天的小東西。非常地想念你,
+                麻吉!
+              </p>
+              <p></p>
+            </div>
+
+            <div id="introEn">
+              <p>
+                My name is Ryan Chen (陳俊綱), and I welcome you to my site. I
+                have more than 15 years of professional experience in web
+                applications development. Building scalable and responsive web
+                has always been my passion. I started my first web site when I
+                was in high school, and it has been an amazing journey to see
+                how the web has evolved and progressed through out the past
+                decades.
+              </p>
+
+              <p>
+                I am currently working at
+                <a href="https://www.gorilla-technology.com/" target="_blank"
+                  >Gorilla Technology Group</a
+                >
+                as a Software Engineer in the Security Convergence team. I am
+                responsible for developing and maintaining the company's various
+                products and projects. Our team is focusing on developing an
+                online applications that tracks internet packets and detect
+                malware and suspicious behaviors. Our clients are the
+                small/medium business and government organizations.
+              </p>
+
+              <p>
+                I worked for
+                <a href="https://www.verizonwireless.com/" target="_blank"
+                  >Verizon</a
+                >
+                as a Sr. Software Engineer for 2.5 years while I was in the
+                United States. Verizon is the largest U.S. wireless
+                communications service provider. I was in the Verizon Lab under
+                Internet Services Team, where we built
+                <a href="#verizon">innovate products</a> to meet the company's
+                directions and business goals. I had an opportunity to learn and
+                apply some of the latest technologies like AngularJS and React
+                on the projects. It was such a rewarding experience to know that
+                the products I worked on have been viewed and used by millions
+                of Verizon's customers in U.S.
+              </p>
+
+              <p>
+                Before Verizon I was working for
+                <a href="http://www.google.com" target="_blank">Google</a> as a
+                contract Web Developer. I was in the Brand Studio team, and our
+                team supported many of the Google's
+                <a href="#google">marketing sites</a> including Google Maps and
+                Google Chromes. During that year I have worked with many
+                talented Engineers and Product Managers. It is really a dream
+                come true for me to work for a company like Google.
+              </p>
+
+              <p>
+                Prior to Google I worked for
+                <a href="https://us.etrade.com/" target="_blank"
+                  >E*TRADE Financial</a
+                >
+                as a Software Engineer. E*TRADE is a financial services company
+                headquartered in New York, and it provides the services for the
+                customers to trade their securities online. I was in the Mobile
+                App team and we built a
+                <a href="#etrade">web based applications</a> for mobile devices.
+                My job was to build responsive cross-platforms applications for
+                different devices like iPhone and iPad. When I joined the team
+                we built the app from scratch, and it was completed and released
+                in March 2013. The app was available to download on App Store
+                and Google Play Store.
+              </p>
+
+              <p>
+                When not coding I enjoy playing tennis, listening music and
+                watching movies. I don't travel a lot, but I have been to Japan
+                several times and I really like its culture. I self-learned
+                Japanese and passed a JLPT N4 exam in 2010, but my Japanese
+                didn't really improve from that point :p. As far as the tennis
+                goes, I am a big fan of Roger Federer. Despite his current age,
+                he is still able to play many compitive games. Oh, in case you
+                are wondering about the adorable dog on top of this page, his
+                name is Mochi. He was a smart, thoughtful and
+                not-always-friendly little thing who always brighten up my day.
+                Really miss you, Mochi!
+              </p>
+            </div>
           </div>
-          <ul>
-            <li>Transform the mock-up to a functional web applications.</li>
-            <li>Single page applications using AngularJS framework.</li>
-            <li>Responsive sites across different devices.</li>
-            <li><a href="https://www.internetservices.verizon.com/" target="_blank">Visit site</a></li>
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Angular JS</li>
-          </ul>
+
+          <div class="qual">
+            <h3>My Qualification Skills</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  target="_blank"
+                  >HTML</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                  >CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  >JavaScript</a
+                >
+              </li>
+              <li><a href="https://react.dev/" target="_blank">React</a></li>
+              <li>
+                <a href="https://nextjs.org/" target="_blank">Next.js</a>
+              </li>
+              <li>
+                <a href="https://tailwindcss.com/" target="_blank"
+                  >Tailwind CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://facebook.github.io/react-native/"
+                  target="_blank"
+                  >React Native</a
+                >
+              </li>
+              <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+              <li>
+                <a href="https://material-ui.com/" target="_blank"
+                  >Material-UI</a
+                >
+              </li>
+              <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>
+              <li>
+                <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+              </li>
+              <li><a href="http://git-scm.com/" target="_blank">Git</a></li>
+              <li>
+                <a href="https://webpack.js.org/" target="_blank">webpack</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <a href="#portfolio" class="section_arrow down grey"></a>
       </div>
+    </section>
+    <!--  End About Me  -->
 
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/image-annotation.png" alt="Verizon">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>Images Annotation Tool</h3>
-            <div class="arrow"></div>
+    <section class="portfolio" name="portfolio">
+      <div class="wrapper">
+        <h2>Portfolio</h2>
+
+        <h3 class="company" name="verizon">
+          Verizon <span>(2014 - 2017)</span>
+        </h3>
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/verizon.png" alt="verizon" />
           </div>
-          <ul>
-            <li>Internal tool to support localization of the mock-ups.</li>
-            <li>Users can upload an screenshot, add annotation to it and generate the JSON file.</li>
-            <li>Use React framework to complete the application.</li>
-            <li>Was praised by the Product Manager for the result.</li>
-            <li><a href="http://www.ryanchenweb.com/tools/" target="_blank">Visit site</a></li>
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-          </ul>
-        </div>
-      </div>      
-
-      <h3 class="company" name="google">Google <span>(2013 - 2014)</span></h3>
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/google_glass.jpg" alt="Google Glass">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>Google Glass</h3>
-            <div class="arrow"></div>
+          <div class="details">
+            <div class="header">
+              <h3>Verizon Internet Services Portal</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>Transform the mock-up to a functional web applications.</li>
+              <li>Single page applications using AngularJS framework.</li>
+              <li>Responsive sites across different devices.</li>
+              <li>
+                <a
+                  href="https://www.internetservices.verizon.com/"
+                  target="_blank"
+                  >Visit site</a
+                >
+              </li>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Angular JS</li>
+            </ul>
           </div>
-          <ul>
-            <li>Add new Explorer Stories module for better maintaince.</li>
-            <li>Perform code review written by the third-party agency.</li>
-            <li>Numerous forms, video, images and text updates requestd by the Product Managers.</li>
-            <li><a href="http://www.google.com/glass/start" target="_blank">Visit site</a></li>
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Agency</li>
-          </ul>
         </div>
-      </div>
 
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/google_dotorg.jpg" alt="Google.org">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>Google.org</h3>
-            <div class="arrow"></div>
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/image-annotation.png" alt="Verizon" />
           </div>
-          <ul>
-            <li>Work on the site migration from Google Giving to Google.org.</li>
-            <li>Update the new Spotlights pages and add the new modules.</li>
-            <li>Act as the main developer contact for Google.org.</li>
-            <li><a href="http://www.google.org" target="_blank">Visit site</a></li>
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Database</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/photosphere.jpg" alt="">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>Google Maps PhotoSphere</h3>
-            <div class="arrow"></div>
+          <div class="details">
+            <div class="header">
+              <h3>Images Annotation Tool</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>Internal tool to support localization of the mock-ups.</li>
+              <li>
+                Users can upload an screenshot, add annotation to it and
+                generate the JSON file.
+              </li>
+              <li>Use React framework to complete the application.</li>
+              <li>Was praised by the Product Manager for the result.</li>
+              <li>
+                <a href="http://www.ryanchenweb.com/tools/" target="_blank"
+                  >Visit site</a
+                >
+              </li>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
           </div>
-          <ul>
-            <li>Work on the redesign of the Google Maps Photo Sphere page.</li>
-            <li>Localize the pages for many different languages and locales.</li>
-            <li>Work on the responsive design across various devices.</li>
-            <li><a href="http://www.google.com/maps/about/contribute/photosphere/" target="_blank">Visit site</a></li>
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
         </div>
-      </div>
 
-<!--      <div class="list">
+        <h3 class="company" name="google">Google <span>(2013 - 2014)</span></h3>
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/google_glass.jpg" alt="Google Glass" />
+          </div>
+          <div class="details">
+            <div class="header">
+              <h3>Google Glass</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>Add new Explorer Stories module for better maintaince.</li>
+              <li>Perform code review written by the third-party agency.</li>
+              <li>
+                Numerous forms, video, images and text updates requestd by the
+                Product Managers.
+              </li>
+              <li>
+                <a href="http://www.google.com/glass/start" target="_blank"
+                  >Visit site</a
+                >
+              </li>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Agency</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/google_dotorg.jpg" alt="Google.org" />
+          </div>
+          <div class="details">
+            <div class="header">
+              <h3>Google.org</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>
+                Work on the site migration from Google Giving to Google.org.
+              </li>
+              <li>Update the new Spotlights pages and add the new modules.</li>
+              <li>Act as the main developer contact for Google.org.</li>
+              <li>
+                <a href="http://www.google.org" target="_blank">Visit site</a>
+              </li>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Database</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/photosphere.jpg" alt="" />
+          </div>
+          <div class="details">
+            <div class="header">
+              <h3>Google Maps PhotoSphere</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>
+                Work on the redesign of the Google Maps Photo Sphere page.
+              </li>
+              <li>
+                Localize the pages for many different languages and locales.
+              </li>
+              <li>Work on the responsive design across various devices.</li>
+              <li>
+                <a
+                  href="http://www.google.com/maps/about/contribute/photosphere/"
+                  target="_blank"
+                  >Visit site</a
+                >
+              </li>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--      <div class="list">
         <div class="thumbnail">
           <img src="images/portfolio/google_chrome.jpg" alt="Google Chrome">
         </div>
@@ -253,7 +462,7 @@
         </div>
       </div> -->
 
-<!--
+        <!--
       <div class="list">
         <div class="thumbnail">
           <img src="images/portfolio/google-ads.jpg" alt="Google Ads Shopping">
@@ -278,86 +487,108 @@
       </div>
 -->
 
-      <h3 class="company" name="etrade">E*TRADE <span>(2011 - 2013)</span></h3>
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/etrade.jpg" alt="E*TRADE">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>E*TRADE Mobile App for Tablets</h3>
-            <div class="arrow"></div>
+        <h3 class="company" name="etrade">
+          E*TRADE <span>(2011 - 2013)</span>
+        </h3>
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/etrade.jpg" alt="E*TRADE" />
           </div>
-          <ul>
-            <li>Responsible for the creation of the entire app layout using HTML/CSS.</li>
-            <li>Work on the responsive design across various tablets.</li>
-            <li>Use Backbone.js for the single page applications.</li>
-            <!-- <li><a href="https://itunes.apple.com/us/app/e*trade-mobile-for-ipad/id364189500" target="_blank" class="itunes">Visit iTunes Store</a></li>
+          <div class="details">
+            <div class="header">
+              <h3>E*TRADE Mobile App for Tablets</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>
+                Responsible for the creation of the entire app layout using
+                HTML/CSS.
+              </li>
+              <li>Work on the responsive design across various tablets.</li>
+              <li>Use Backbone.js for the single page applications.</li>
+              <!-- <li><a href="https://itunes.apple.com/us/app/e*trade-mobile-for-ipad/id364189500" target="_blank" class="itunes">Visit iTunes Store</a></li>
             <li><a href="https://play.google.com/store/apps/details?id=com.etrade.tabletapp" target="_blank" class="google">Visit Google Play</a></li> -->
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-          </ul>
-        </div>
-      </div>
-
-      <h3 class="company">QuinStreet <span>(2006 - 2011)</span></h3>
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/wwl.jpg" alt="WorldWideLearn">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>World Wide Learn</h3>
-            <div class="arrow"></div>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+            </ul>
           </div>
-          <ul>
-            <li>Involve the redesign and code refactor of the site.</li>
-            <li>Work on the back-end MVC conversion using CodeIgniter PHP framework.</li>
-            <li>Numerous text, images and database updates based on the Product Managers' requets.</li>
-            <li><a href="http://www.worldwidelearn.com" target="_blank">Visit site</a></li>
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-          </ul>
         </div>
-      </div>
 
-      <div class="list">
-        <div class="thumbnail">
-          <img src="images/portfolio/asg.jpg" alt="ArmyStudyGuide">
-        </div>
-        <div class="details">
-          <div class="header">
-            <h3>Army Study Guide</h3>
-            <div class="arrow"></div>
+        <h3 class="company">QuinStreet <span>(2006 - 2011)</span></h3>
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/wwl.jpg" alt="WorldWideLearn" />
           </div>
-          <ul>
-            <li>Involve the redesign and code refactor of the site.</li>
-            <li>Work on the back-end MVC conversion using CodeIgniter PHP framework.</li>
-            <li>Act as a main developer contact for the site.
-            <li><a href="http://www.armystudyguide.com" target="_blank">Visit site</a></li>
-          </ul>
-          <ul class="tech">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-          </ul>
+          <div class="details">
+            <div class="header">
+              <h3>World Wide Learn</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>Involve the redesign and code refactor of the site.</li>
+              <li>
+                Work on the back-end MVC conversion using CodeIgniter PHP
+                framework.
+              </li>
+              <li>
+                Numerous text, images and database updates based on the Product
+                Managers' requets.
+              </li>
+              <li>
+                <a href="http://www.worldwidelearn.com" target="_blank"
+                  >Visit site</a
+                >
+              </li>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!--
+        <div class="list">
+          <div class="thumbnail">
+            <img src="images/portfolio/asg.jpg" alt="ArmyStudyGuide" />
+          </div>
+          <div class="details">
+            <div class="header">
+              <h3>Army Study Guide</h3>
+              <div class="arrow"></div>
+            </div>
+            <ul>
+              <li>Involve the redesign and code refactor of the site.</li>
+              <li>
+                Work on the back-end MVC conversion using CodeIgniter PHP
+                framework.
+              </li>
+              <li>Act as a main developer contact for the site.</li>
+              <li>
+                <a href="http://www.armystudyguide.com" target="_blank"
+                  >Visit site</a
+                >
+              </li>
+            </ul>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--
         <h3 class="company">Personal Sites</h3>
         <div class="list">
           <div class="thumbnail">
@@ -386,7 +617,7 @@
         </div>
       -->
 
-      <!--
+        <!--
       <div class="list">
         <div class="thumbnail">
           <img src="images/portfolio/pindobi.jpg" alt="Pindobi">
@@ -440,48 +671,96 @@
       </div>
       -->
 
-      <a href="#testimonials" class="section_arrow down grey"></a>
-    </div>
-  </section><!--  End Portfolio  -->
+        <a href="#testimonials" class="section_arrow down grey"></a>
+      </div>
+    </section>
+    <!--  End Portfolio  -->
 
-  <section class="testimonials" name="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testi_slider">
-      <p>"Just wanted to drop you a note to call out the wonderful work of one of your teammate, Ryan Chen.  I tried to give him a peer bonus but was told I couldn't because he is a contractor.</p>
+    <section class="testimonials" name="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testi_slider">
+        <p>
+          "Just wanted to drop you a note to call out the wonderful work of one
+          of your teammate, Ryan Chen. I tried to give him a peer bonus but was
+          told I couldn't because he is a contractor.
+        </p>
 
-      <p>I can't begin to tell you how awesome he has been in helping me with any number of updates associated with Google.org Marketing.  He has gone above and beyond the call of duty - at all hours of the night to answer my endless questions, troubleshoot unexpected challenges, and ensure our websites are running smoothly and effectively.</p>
+        <p>
+          I can't begin to tell you how awesome he has been in helping me with
+          any number of updates associated with Google.org Marketing. He has
+          gone above and beyond the call of duty - at all hours of the night to
+          answer my endless questions, troubleshoot unexpected challenges, and
+          ensure our websites are running smoothly and effectively.
+        </p>
 
-      <p>Ryan represents the best of Google and we're lucky to have him on the team."</p>
-      <p class="author"><em>Lauren Baum - Product Marketing Manager at Google, 2014</em></p>
-    </div>
-    <a href="#contact" class="section_arrow down white"></a>
-  </section><!--  End Testimonials  -->
+        <p>
+          Ryan represents the best of Google and we're lucky to have him on the
+          team."
+        </p>
+        <p class="author">
+          <em>Lauren Baum - Product Marketing Manager at Google, 2014</em>
+        </p>
+      </div>
+      <a href="#contact" class="section_arrow down white"></a>
+    </section>
+    <!--  End Testimonials  -->
 
-  <footer name="contact">
-    <h2>Contact</h2>
-    <div><a href="mailto:ryan26tw@yahoo.com">ryan26tw@yahoo.com</a></div>
-    <div><a href="https://www.linkedin.com/in/ryan-chen-web/" class="resume" target="_blank">LinkedIn Profile
-    </a></div>
-    <div><a href="file/RyanChenResume.pdf" class="resume" target="_blank">My resume</a></div>
+    <footer name="contact">
+      <h2>Contact</h2>
+      <div><a href="mailto:ryan26tw@yahoo.com">ryan26tw@yahoo.com</a></div>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/ryan-chen-web/"
+          class="resume"
+          target="_blank"
+          >LinkedIn Profile
+        </a>
+      </div>
+      <div>
+        <a href="file/RyanChenResume.pdf" class="resume" target="_blank"
+          >My resume</a
+        >
+      </div>
 
-    <!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ryan-chen-web"><a class="LI-simple-link" href='https://www.linkedin.com/in/ryan-chen-web?trk=profile-badge'>Ryan Chen</a></div>-->
-    <a href="#top" class="section_arrow up"></a>
-    <img src="images/logo2.png" alt="RyanChenWeb Logo" class="logo">
-    <p class="rights">ryanchenweb.com</p>
-    <p id="full_year"></p>
-  </footer><!--  End Footer  -->
+      <!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ryan-chen-web"><a class="LI-simple-link" href='https://www.linkedin.com/in/ryan-chen-web?trk=profile-badge'>Ryan Chen</a></div>-->
+      <a href="#top" class="section_arrow up"></a>
+      <img src="images/logo2.png" alt="RyanChenWeb Logo" class="logo" />
+      <p class="rights">ryanchenweb.com</p>
+      <p id="full_year"></p>
+    </footer>
+    <!--  End Footer  -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+    ></script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        'https://www.google-analytics.com/analytics.js',
+        'ga'
+      );
 
-    ga('create', 'UA-96031924-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
+      ga('create', 'UA-96031924-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
